@@ -1,24 +1,27 @@
-class mlops:
-        def init(self, totalStudents):
-                self.totalStudents = totalStudents
+# main.py
+class StudentsInMLOps:
+    def __init__(self, totalStudents):
+        self.totalStudents = totalStudents
 
-        def getTotalStudents(self):
-                return self.totalStudents
-        
-        def addStudent(self):
-                self.totalStudents=self.totalStudents + 1
-        
-        def removeStudent(self):
-                self.totalStudents=self.totalStudents - 1
-        
-        def getClassName(self):
-                return "Machine Learning Operations (CS-B)"
-        
-mlops_class = mlops(5)
+    def getTotalStudents(self):
+        return self.totalStudents
+    
+    def addStudent(self):
+        self.totalStudents += 1
+    
+    def removeStudent(self):
+        self.totalStudents -= 1
+    
+    def getClassName(self):
+        return "Machine Learning Operations (CS-B)"
 
+# Create an instance of StudentsInMLOps
+mlops_class = StudentsInMLOps(5)
+
+# Call the methods
 mlops_class.addStudent()
-
 mlops_class.removeStudent()
 
-print(mlops_class.getTotalStudents())  # Call the method
-print(mlops_class.getClassName())      # Call the method
+# Print the results
+print(mlops_class.getTotalStudents())
+print(mlops_class.getClassName())
