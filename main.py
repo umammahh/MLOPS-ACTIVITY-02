@@ -18,7 +18,7 @@ class StudentsInMLOps:
 # Create an instance of StudentsInMLOps
 mlops_class = StudentsInMLOps(5)
 
-# Call the methods
+# Call methods on the instance
 mlops_class.addStudent()
 mlops_class.removeStudent()
 
